@@ -72,6 +72,21 @@ const Navbar = () => {
           </span>
         </NavLink>
         <NavLink
+          to="/team"
+          className={pathname === "/team" ? styles.active : styles.link}
+        >
+          <span
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative",
+            }}
+          >
+            Team
+          </span>
+        </NavLink>
+        <NavLink
           to="#"
           className={pathname === "#" ? styles.active : styles.link}
           style={{ position: "relative" }}
